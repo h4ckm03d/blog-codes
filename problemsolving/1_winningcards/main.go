@@ -22,8 +22,8 @@ func Solution(A, B string) int {
 		return res
 	}
 
-	for idx, _ := range A {
-		if value(A[idx]) > value(B[idx]) {
+	for idx, a := range A {
+		if value(byte(a)) > value(B[idx]) {
 			res++
 		}
 	}
